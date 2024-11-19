@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线翻译工具</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>张钰琪&张倬尔爱学习</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#translation">翻译</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="translation-section">
+            <div class="translation-container">
+                <div class="input-area">
+                    <textarea 
+                        placeholder="请输入英文内容..." 
+                        id="input-text"
+                    ></textarea>
+                    <button id="translate-btn">翻译</button>
+                </div>
+                <div class="output-area">
+                    <div class="translation-result">
+                        <h3>翻译结果</h3>
+                        <div id="chinese-output"></div>
+                        <div class="phonetic">
+                            <span id="phonetic-text"></span>
+                            <button class="sound-btn" id="play-sound">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                        </div>
+                        <div class="phrases" id="common-phrases">
+                            <h4>常用词组</h4>
+                            <!-- 词组将通过 JavaScript 动态添加 -->
+                        </div>
+                        <div class="example-sentences" id="example-sentences">
+                            <h4>示例句子</h4>
+                            <!-- 示例句子将通过 JavaScript 动态添加 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <div class="stats">
+            <h3>统计信息</h3>
+            <p>已翻译单词数：<span id="translation-count">0</span></p>
+        </div>
+        <div class="history">
+            <h3>历史记录</h3>
+            <ul id="history-list">
+                <!-- 历史记录将通过 JavaScript 动态添加 -->
+            </ul>
+        </div>
+        <div class="popular-translations">
+            <h3>热门翻译</h3>
+            <ul id="popular-words">
+                <!-- 热门翻译将通过 JavaScript 动态添加 -->
+            </ul>
+        </div>
+    </aside>
+
+    <footer>
+        <p>© 2024 在线翻译工具. All rights reserved.</p>
+        <div class="contact">
+            <a href="mailto:your@email.com">联系我们</a>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+</body>
+</html> 
